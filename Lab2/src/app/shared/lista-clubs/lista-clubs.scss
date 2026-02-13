@@ -1,0 +1,24 @@
+
+table, th, td{
+  border-color: gray;
+  border-style: solid;
+  border-collapse: collapse;
+  border-width: 1px;
+}
+tr{
+  background-color: aquamarine;
+}
+tr.inactive{
+  background-color: gray;
+}
+tr.seleccionado{
+  background-color: yellow;
+}
+.cabecera{
+  background-color: aqua;
+}
+
+.filtro{
+  padding: 5px;
+}
+

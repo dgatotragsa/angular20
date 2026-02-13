@@ -1,0 +1,27 @@
+<div>
+  <h2>Participantes</h2>
+  @if (participantes().length > 0 ){
+    <table>
+      <tr class="cabecera">
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th>Rango</th>
+      </tr>
+      <tbody>
+        @for ( participante of listaParticipantes(); track participante.id){
+          <tr >
+            <td >{{participante.name}}</td>
+            <td >{{participante.age}}</td>
+            <td >{{participante.rank}}</td>
+
+          </tr>
+        }
+      </tbody>
+    </table>
+  }
+  @else{
+    <p>Sin participantes</p>
+  }
+</div>
+
+

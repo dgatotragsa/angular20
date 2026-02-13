@@ -1,0 +1,7 @@
+<h2>Nuevo Practicante</h2>
+<form [formGroup]="altaForm" (ngSubmit)="addParticipante()" >
+  <label>Nombre<input formControlName="name" tabindex="3"/></label>
+  <label>Edad<input  type="number"  formControlName="age" min="10" tabindex="4"/></label>
+  <label>Rango<input  formControlName="rank" tabindex="5"/></label>
+  <button label="Guardar" type="submit" [disabled]="altaForm.invalid" aria-label="Guardar Participante" tabindex="6">Guardar</button>
+</form>

@@ -1,0 +1,76 @@
+{
+  "clubs": [
+    {
+      "id": 1,
+      "name": "Dragón Rojo",
+      "style": "Karate",
+      "city": "Málaga",
+      "active": true,
+      "practitioners": [1, 2]
+    },
+    {
+      "id": 2,
+      "name": "Puño de Acero",
+      "style": "Boxeo",
+      "city": "Granada",
+      "active": true,
+      "practitioners": [3]
+    },
+    {
+      "id": 3,
+      "name": "Loto Blanco",
+      "style": "Kung Fu",
+      "city": "Sevilla",
+      "active": false,
+      "practitioners": [4]
+    },
+    {
+      "id": 4,
+      "name": "Camino del Tigre",
+      "style": "Taekwondo",
+      "city": "Córdoba",
+      "active": true,
+      "practitioners": [5]
+    },
+    {
+      "id": 5,
+      "name": "Sombras del Norte",
+      "style": "Jiu-Jitsu",
+      "city": "Almería",
+      "active": true,
+      "practitioners": []
+    }
+  ],
+  "practitioners": [
+    {
+      "id": 1,
+      "name": "Lucía Fernández",
+      "age": 24,
+      "rank": "Cinturón Marrón"
+    },
+    {
+      "id": 2,
+      "name": "Carlos Ruiz",
+      "age": 31,
+      "rank": "Cinturón Negro"
+    },
+    {
+      "id": 3,
+      "name": "Marta López",
+      "age": 19,
+      "rank": "Cinturón Verde"
+    },
+    {
+      "id": 4,
+      "name": "Diego Torres",
+      "age": 28,
+      "rank": "Instructor"
+    },
+    {
+      "id": 5,
+      "name": "Sofía Martín",
+      "age": 22,
+      "rank": "Cinturón Azul"
+    }
+  ]
+}

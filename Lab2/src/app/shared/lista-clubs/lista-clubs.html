@@ -1,0 +1,24 @@
+<div >
+  <h1>Lista de clubs</h1>
+  <div class="filtro">
+    <label>Nombre: <input [(ngModel)]="filtroNombre" (input) ="onFilterNameChange()" aria-label="Filtrar club por nombre" tabindex="1"/></label>
+  </div>
+  <table>
+    <tr class="cabecera">
+      <th>Nombre</th>
+      <th>Estilo</th>
+      <th>Ciudad</th>
+      <th>Estado</th>
+    </tr>
+    <tbody>
+      @for ( club of datos; track club.id){
+        <tr [class.inactive]="!club.active" [class.seleccionado]="isClubSelected(club)">
+          <td (click)="selectClub(club)">{{club.name | uppercase}}</td>
+          <td (click)="selectClub(club)">{{club.style}}</td>
+          <td (click)="selectClub(club)">{{club.city}}</td>
+          <td (click)="selectClub(club)">{{getEstado(club.active)}}</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,7 @@
+<div>
+  <h1>Detalle del club {{club.name}}</h1>
+  <p>Nombre: {{club.name}}</p>
+  <p>Estilo: {{club.style}}</p>
+  <p>Ciudad: {{club.city}}</p>
+  <p>Activo: <input type="checkbox" #clubActivo [checked]="club.active" (change)="estadoClub(clubActivo.checked)" disabled/></p>
+</div>

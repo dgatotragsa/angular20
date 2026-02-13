@@ -1,0 +1,17 @@
+<div >
+  <div class="contenedor">
+    <div class="multiComponente">
+      <app-lista-clubs (clubSelected)="onClubSeleccionado($event)" ></app-lista-clubs>
+      @if ( clubSeleccionado() != null ){
+          <app-club-detalle  [club]="clubSeleccionado()!"></app-club-detalle>
+      }
+    </div>
+    <app-lista-participantes #participantesCtrl [participantes]="getParticipantes()"></app-lista-participantes>
+    @if ( clubSeleccionado() != null ){
+      <button label="Añadir" (click)="showAlta()" aria-label="Añadir nuevo participante" tabindex="2">Añadir</button>
+    }
+    @if( mostrarAlta ) {
+      <app-participante-form (participanteEmitter)="nuevoParticipante($event)"></app-participante-form>
+    }
+</div>
+

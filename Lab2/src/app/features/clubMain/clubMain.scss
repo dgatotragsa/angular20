@@ -1,0 +1,14 @@
+.contenedor{
+  background-color: antiquewhite;
+  border-radius: 5px;
+  padding:10px;
+  width: fit-content;
+}
+
+.multiComponente{
+  display:inline-flex;
+
+}
+.multiComponente app-club-detalle{
+  padding: 5px;
+}
